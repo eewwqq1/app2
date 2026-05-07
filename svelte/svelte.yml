@@ -21,14 +21,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: svel
-  annotations:
-    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
-    service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+  name: svelte-svc
 spec:
+  type: ClusterIP
   selector:
-    app: svel
+    app: svelte
   ports:
   - port: 80
     targetPort: 80
-  type: LoadBalancer
