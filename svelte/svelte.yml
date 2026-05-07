@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: con-svel
-        image: 084550838259.dkr.ecr.ap-northeast-2.amazonaws.com/svelte:1
+        image: 084550838259.dkr.ecr.ap-northeast-2.amazonaws.com/svelte:2
 
 ---
 
